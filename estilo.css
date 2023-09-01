@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?=swap');
+html, body {
+    margin: 0;
+}
+header {
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 60px;
+    position: absolute;
+    top: 0px;
+    margin-left: 2px;
+}
+#menu {
+    float: right;
+    margin-right: 1%;
+    list-style: none;
+    margin-top: 0px;
+}
+li {
+    float: right;
+    padding: 20 10 20 10;
+}
+li:hover {
+    background-color: rgb(0, 119, 255);
+}
+#imagem_fundo {
+    background: url("img/fundo7.jpg");
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+#título {
+    color: white;
+    padding-top: 15%;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+}
+#subtítulo {
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#acao {
+    color: white;
+    border: 1px white solid;
+    padding: 8px 20px 8px 20px;
+}
+.icone {
+    width: 160px;
+}
+section {
+    padding: 2%;
+    float: left;
+}
+.destaque {
+    background-color: #f7e3d965;
+ }
+ .imgsaude {
+    width: 90%;
+    height:50%;
+ }
+ .coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+ }
+ .dois {
+    width: 40%;
+ }
+ .quatro {
+    width: 15%;
+ }
+ .tres {
+    width: 29%;
+    padding: 0 2%;
+ }
+ .justificado {
+    text-align: justify;
+ }
+ .centralizado {
+    text-align: center;
+ }
+ footer {
+    background-color: rgb(0, 119, 255);
+    float: left;
+    width: 100%;
+    height: 40%;
+    color: white;
+ }
+ @media all and (max-width: 768px) {
+    #menu { 
+        visibility: hidden;
+    }
+    .coluna, .dois, .três, .quatro {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #logodiv {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    #logo {
+        margin-left: 0px;
+        transform: translateX(-50%);
+    }
+}
+ 
